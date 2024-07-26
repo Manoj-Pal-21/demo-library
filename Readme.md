@@ -71,6 +71,3 @@ Contributions are welcome! Fork the repository and submit a pull request with yo
 
 ## Deployment
 You can view the live application at: [Library Management System](https://your-deployment-link-here.com)
-
-
-

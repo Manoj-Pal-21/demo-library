@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { baseUrl, getToken } from '../../utils/Cookie';
+import NoDataFound from '../../components/NoDataFound';
 
 const Status = () => {
   const [bookRequests, setBookRequests] = useState([]);
@@ -70,7 +71,7 @@ const Status = () => {
 
           </table>
         ) : (
-          <p>No data available</p>
+          <NoDataFound />
         )}
       </div>
     </div>

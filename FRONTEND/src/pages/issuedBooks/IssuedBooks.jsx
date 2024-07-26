@@ -3,6 +3,7 @@ import axios from "axios";
 import { baseUrl, getToken } from "../../utils/Cookie";
 import toast, { Toaster } from 'react-hot-toast';
 import { formatDate } from "../../dateFormatter/Date";
+import NoDataFound from "../../components/NoDataFound";
 
 const IssuedBooks = () => {
   const [selectedTab, setSelectedTab] = useState("pending");
@@ -115,7 +116,7 @@ const IssuedBooks = () => {
                   ))}
                 </ul>
               ) : (
-                <p>No data available</p>
+                <NoDataFound/>
               )}
             </div>
           </div>
@@ -154,7 +155,7 @@ const IssuedBooks = () => {
                     </tbody>
                   </table>
                 ) : (
-                  <p>No data available</p>
+                  <NoDataFound/>
                 )
               }
             </div>

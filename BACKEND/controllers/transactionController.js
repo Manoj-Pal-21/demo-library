@@ -104,7 +104,7 @@ const issueDetails = async (req, res) => {
   }
 };
 
-const deleteTransation = async (req, res) => {
+const deleteTransaction = async (req, res) => {
   const { transactionId } = req.params;
 
   try {
@@ -122,4 +122,4 @@ const deleteTransation = async (req, res) => {
   }
 };
 
-module.exports = { updateIssueRequest, addTransaction, getBookRequest, deleteTransation, issueDetails };
+module.exports = { updateIssueRequest, addTransaction, getBookRequest, deleteTransaction, issueDetails };

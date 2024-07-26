@@ -5,6 +5,7 @@ import { selectUser } from '../redux/slice/auth';
 import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios';
 import { baseUrl, getToken } from '../utils/Cookie';
+import NoDataFound from './NoDataFound';
 
 const AllBooksTable = ({ getBookList }) => {
     const { books } = useSelector(selectBooks);
@@ -81,7 +82,7 @@ const AllBooksTable = ({ getBookList }) => {
                     </tbody>
                 </table>
                 ) : (
-                    <p>No data available</p>
+                    <NoDataFound />
                 )
             }
 

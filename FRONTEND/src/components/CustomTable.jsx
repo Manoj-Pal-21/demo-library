@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { baseUrl } from '../utils/Cookie';
+import NoDataFound from './NoDataFound';
 
 
 const CustomTable = ({ token, data, fetchBookRequest }) => {
@@ -75,7 +76,7 @@ const CustomTable = ({ token, data, fetchBookRequest }) => {
                                 </tbody>
                             </table>
                             ) : (
-                                <p>No data available</p>
+                                <NoDataFound/>
                             )
                         }
                     </div>
